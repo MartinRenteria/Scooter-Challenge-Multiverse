@@ -1,0 +1,28 @@
+{
+  "name": "scooter-challenge-multiverse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+    "scripts": {
+      "test": "jest",
+      "test:report": "jest --coverage=true"
+    },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinRenteria/Scooter-Challenge-Multiverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinRenteria/Scooter-Challenge-Multiverse/issues"
+  },
+  "homepage": "https://github.com/MartinRenteria/Scooter-Challenge-Multiverse#readme",
+  "dependencies": {
+    "jest": "^27.3.1"
+  }
+}
