@@ -1,6 +1,6 @@
 const Scooter = require('../src/scooter')
 
-test('testing to see if serialNumbr comes back from instance', () => {
+test('Makes new instance of Scooter', () => {
     const testSerial = new Scooter()
-    expect(testSerial.serialNumber).toBe()
+    expect(testSerial.serialNumber).toBe(101)
 })
