@@ -34,7 +34,9 @@ class Scooter {
       }
 }
 
-const scooter = new Scooter()
-scooter.recharge()
+// const scooter = new Scooter()
+// scooter.recharge()
+// scooter.fixScooter()
+// scooter.rent()
 
 module.exports = Scooter;

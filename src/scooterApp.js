@@ -13,14 +13,10 @@ class ScooterApp {
         ScooterApp.registeredUsers.push(user.username, user.password, user.age)
         console.log('You have been registered')
     } else {
-      return 'user is already registered or age is invalid'
+      return 'username is already registered'
     }
   }
   
 }
-
-const scooter = new ScooterApp()
-scooter.addScooter('Main Street', 'Scooter1')
-console.log(ScooterApp.this.stations)
 
 module.exports = ScooterApp;
