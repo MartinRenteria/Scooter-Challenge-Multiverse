@@ -1,10 +1,10 @@
 class Scooter {
     static serialNumber = 100
     constructor(station, user) {
-        this.serialNumber = Scooter.serialNumber
-        Scooter.serialNumber+= 1
         this.station = station
         this.user = user 
+        this.serialNumber = Scooter.serialNumber
+        Scooter.serialNumber+= 1
         this.Broken = false
         this.docked = true
     }
@@ -23,6 +23,18 @@ class Scooter {
           }, 4000);
           return 'thanks for waiting...'
     }
+
+    rent() {
+        if(!this.Broken) {
+          this.docked = false
+          console.log('Scooter rented! Have fun!')
+        }else {
+          console.log('Scooter is broken...please send a repair request')
+        }
+      }
 }
+
+const scooter = new Scooter()
+scooter.rent()
 
 module.exports = Scooter;
