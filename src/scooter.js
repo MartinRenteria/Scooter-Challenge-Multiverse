@@ -12,17 +12,17 @@ class Scooter {
         console.log("Recharging...")
         setTimeout(function() {
             console.log('Finished Charging!');
-          }, 5000);
+          }, 2000);
           return "Almost there..."
     }
     
-    fixScooter() {
-        console.log('Thank you for submitting a request. Fixing Scooter...');
-        setTimeout(function() {
-            console.log('Repairs are complete!');
-          }, 4000);
-          return 'thanks for waiting...'
-    }
+    async fixScooter() {
+        console.log('Charging....')
+        await new Promise(resolve => {
+          setTimeout(resolve, 1000)
+        })
+        console.log("Scooter has been recharged!")
+      }
 
     rent() {
         if(!this.Broken) {
@@ -35,6 +35,6 @@ class Scooter {
 }
 
 const scooter = new Scooter()
-scooter.rent()
+scooter.recharge()
 
 module.exports = Scooter;

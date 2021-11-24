@@ -16,16 +16,11 @@ class ScooterApp {
       return 'user is already registered or age is invalid'
     }
   }
-
+  dock()
 }
 
-const user1 = new ScooterApp()
-const user2 = new ScooterApp()
-const user3 = new ScooterApp()
-
-user1.register('Martin','secretPassoword',26)
-console.log(user2.register('Martin','secretPassoword',26))
-user3.register('pretti', 'secret', 20)
-
+const scooter = new ScooterApp()
+scooter.addScooter('Main Street', 'Scooter1')
+console.log(ScooterApp.this.stations)
 
 module.exports = ScooterApp;
