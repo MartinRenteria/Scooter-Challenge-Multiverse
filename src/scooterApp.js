@@ -16,7 +16,7 @@ class ScooterApp {
       return 'user is already registered or age is invalid'
     }
   }
-  dock()
+  
 }
 
 const scooter = new ScooterApp()
